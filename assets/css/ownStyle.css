@@ -1,0 +1,59 @@
+.kisection1 {
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#positionierung {
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.positionierungButton {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#ki2 {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 84%;
+    height: 21em;
+}
+
+.kisection2 {
+    height: inherit;
+}
+
+#jsonOutput {
+    float: right;
+    height: 21em;
+}
+
+#imageDiv {
+    float: left;
+    height: 21em;
+}
+
+#responseTextArea {
+    height: 17em;
+}
+
+.faceExample {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: 70px;
+}
+
+footer, #footerPosition {
+    text-align: center;
+    display: inline;
+}
+

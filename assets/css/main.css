@@ -1,57 +1,5 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600");
-
-/*Neu dazu: */
-
-.kisection1 {
-    width: 92%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-}
-
-#positionierung {
-    width: 92%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-}
-
-.positionierungButton {
-    text-align: center;
-    margin-top: 5%;
-}
-
-#ki2 {
-    width: 92%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-}
-
-.kisection2 {
-    width: 42%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.faceExample {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-}
-
-.logo {
-    width: 8%;
-    height: 3%;
-}
-
-#footerPosition {
-    text-align: center;
-}
-
-
 /* Reset */
 
 html,
@@ -452,9 +400,9 @@ hr.major {
     padding: 1.5em;
 }
 
-.box> :last-child,
-.box> :last-child> :last-child,
-.box> :last-child> :last-child> :last-child {
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
     margin-bottom: 0;
 }
 
@@ -697,6 +645,7 @@ form .field.half.first {
         display: block;
         width: 100%;
     }
+
     form .field.half.first {
         margin-right: 0;
     }
@@ -806,8 +755,8 @@ input[type="radio"] {
     z-index: -1;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
@@ -818,8 +767,8 @@ input[type="radio"]+label {
     position: relative;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;
@@ -828,8 +777,8 @@ input[type="radio"]+label:before {
     text-transform: none !important;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
     border-radius: 4px;
     border: solid 1px;
     content: '';
@@ -843,16 +792,16 @@ input[type="radio"]+label:before {
     width: 1.65em;
 }
 
-input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
     content: '\f00c';
 }
 
-input[type="checkbox"]+label:before {
+input[type="checkbox"] + label:before {
     border-radius: 4px;
 }
 
-input[type="radio"]+label:before {
+input[type="radio"] + label:before {
     border-radius: 100%;
 }
 
@@ -920,6 +869,7 @@ input[type="radio"]+label:before {
         padding: 2em;
         min-height: 20em;
     }
+
     .gallery header h2 {
         margin-bottom: 1em;
     }
@@ -1051,7 +1001,7 @@ input[type="radio"]+label:before {
     text-transform: none !important;
 }
 
-.icon>.label {
+.icon > .label {
     display: none;
 }
 
@@ -1194,6 +1144,7 @@ ul.tabs li:first-child {
         margin: 0 0 .25em 0;
         padding: 0;
     }
+
     ul.tabs li .button {
         width: 100%;
     }
@@ -1253,7 +1204,7 @@ ul.actions.vertical li:first-child {
     padding-top: 0;
 }
 
-ul.actions.vertical li>* {
+ul.actions.vertical li > * {
     margin-bottom: 0;
 }
 
@@ -1278,7 +1229,7 @@ ul.actions.fit li {
     padding: 0 0 0 1em;
 }
 
-ul.actions.fit li>* {
+ul.actions.fit li > * {
     margin-bottom: 0;
 }
 
@@ -1295,25 +1246,31 @@ ul.actions.fit.small li {
     ul.actions {
         margin: 0 0 2em 0;
     }
+
     ul.actions li {
         padding: 1em 0 0 0;
         display: block;
         text-align: center;
         width: 100%;
     }
+
     ul.actions li:first-child {
         padding-top: 0;
     }
-    ul.actions li>* {
+
+    ul.actions li > * {
         width: 100%;
         margin: 0 !important;
     }
-    ul.actions li>*.icon:before {
+
+    ul.actions li > *.icon:before {
         margin-left: -2em;
     }
+
     ul.actions.small li {
         padding: 0.5em 0 0 0;
     }
+
     ul.actions.small li:first-child {
         padding-top: 0;
     }
@@ -1400,19 +1357,19 @@ header p {
     margin: 0 0 1.5em 0;
 }
 
-header h2+p {
+header h2 + p {
     font-size: 1.25em;
     margin-top: -1em;
 }
 
-header h3+p {
+header h3 + p {
     font-size: 1.1em;
     margin-top: -0.8em;
 }
 
-header h4+p,
-header h5+p,
-header h6+p {
+header h4 + p,
+header h5 + p,
+header h6 + p {
     font-size: 0.9em;
     margin-top: -0.6em;
 }
@@ -1504,19 +1461,19 @@ table.alt tfoot {
     position: relative;
 }
 
-.wrapper>.inner {
+.wrapper > .inner {
     margin: 0 auto;
     width: 60em;
 }
 
 @media screen and (max-width: 1280px) {
-    .wrapper>.inner {
+    .wrapper > .inner {
         width: 65em;
     }
 }
 
 @media screen and (max-width: 980px) {
-    .wrapper>.inner {
+    .wrapper > .inner {
         width: 100%;
     }
 }
@@ -1577,7 +1534,7 @@ table.alt tfoot {
 
 /* Banner */
 
-body.is-loading #banner>.inner {
+body.is-loading #banner > .inner {
     opacity: 0;
     -moz-transform: translateY(1em);
     -webkit-transform: translateY(1em);
@@ -1709,9 +1666,11 @@ body.is-loading #banner>.inner {
     #banner {
         background-attachment: scroll;
     }
+
     #banner h1 {
         font-size: 2.25em;
     }
+
     #banner p {
         font-size: 1.25em;
     }
