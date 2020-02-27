@@ -51,8 +51,8 @@
     height: 2em;
 }
 
-footer, #footerPosition {
+footer,
+#footerPosition {
     text-align: center;
     display: inline;
 }
-
