@@ -1,0 +1,23 @@
+cd ..\..\xampp\htdocs\KI_Emotionserkennung\assets\python\
+set FLASK_APP=hello.py
+                         set FLASK_ENV=development
+python -m flask run
+
+
+Die beiden .ipynb + den Data Ordner
+
+- Data/Fer2013.csv
+- KI_to_me_CNN.ipynb
+
+In Benutzung:
+- Data/mmod_human_face_detector.dat
+- Data/model_weight_accuracy_0.6709.h5
+- KI_to_me_Prod.ipynb
+
+Und du brauchst für die Webseite eigentlich nur die Dateien für "In Benutzung"
+
+
+Benötigte Install packete
+tensorflow
+keras
+numpy
