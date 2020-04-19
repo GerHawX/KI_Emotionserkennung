@@ -27,7 +27,7 @@ function doRestCall(data) {
         }
     };
 
-    xhttp.open("POST", "assets/php/fummel.php", true);
+    xhttp.open("POST", "assets/php/sendData.php", true);
     xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhttp.send('data=' + encodeURIComponent(data));
 }
