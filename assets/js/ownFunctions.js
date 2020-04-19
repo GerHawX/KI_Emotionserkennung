@@ -1,7 +1,8 @@
 function showImage(pictureId) {
-    // Display the image.
+
     var sourceImageUrl;
     switch (pictureId) {
+        // Es wird unterschieden, ob ein Bild aus unserer Vorauswahl (case "inputImage") ausgewählt wurde oder eines aus der Textbox.
         case "inputImage":
             sourceImageUrl = document.getElementById(pictureId).value;
             doRestCall(sourceImageUrl);
@@ -10,20 +11,19 @@ function showImage(pictureId) {
             sourceImageUrl = document.getElementById(pictureId).src;
             doRestCall(sourceImageUrl);
     }
+    // Anzeigen des verwendeten Bildes
     document.querySelector("#sourceImage").src = sourceImageUrl;
 }
 
 function doRestCall(data) {
+    // Ausführen eines AJAX-Requests
     var responseTextArea = document.getElementById("responseTextArea");
-    //var sourceImage = document.getElementById("sourceImage")
     responseTextArea.value = "Analyse wird durchgeführt..."
     var xhttp = new XMLHttpRequest();
-
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            // Typical action to be performed when the document is ready:
+            // Wenn Request erfolgreich wird der JSON-String im Antwort-Textfeld angezeigt.
             responseTextArea.value = xhttp.responseText;
-            //sourceImage.src = " ";
         }
     };
 
