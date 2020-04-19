@@ -6,7 +6,7 @@ ownFunctions.js, sendData.php und hello.py mit Kommentaren versehen, da diese ei
 Der Rest stammt aus dem verwendeten HTML-Template. 
 
 Requirements: 
-Windows 64-Bit 
-Conda 4.8.3 (mit Python 3.7) https://docs.conda.io/en/latest/miniconda.html
-Apache Webserver (hier über XAMMP) https://www.apachefriends.org/de/index.html
+- Windows 64-Bit 
+- Conda 4.8.3 (mit Python 3.7) https://docs.conda.io/en/latest/miniconda.html
+- Apache Webserver (hier über XAMMP) https://www.apachefriends.org/de/index.html
 
