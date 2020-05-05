@@ -51,7 +51,7 @@ def work():
     print("Anfrage eingetroffen!")
 
     print("Lade Model!")
-    model = load_model("model_weights_accuracy_0.6843.h5")
+    model = load_model("model_weights.h5")
     print("Model geladen!")
 
     emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
